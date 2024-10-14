@@ -1,0 +1,8 @@
+<div *ngIf="currentTime">
+    <h1>Hora atual de São Paulo</h1>
+    <p>Data e hora: {{ currentTime.datetime }}</p>
+    <p>Fuso horário: {{ currentTime.timezone }}</p>
+  </div>
+  <div *ngIf="!currentTime">
+Carregando...
+  </div>
